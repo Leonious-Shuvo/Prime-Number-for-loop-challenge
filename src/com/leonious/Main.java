@@ -4,11 +4,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //int count =0;
+        int count =0;
         for( int i=10; i<50; i++) {
             if(isPrime(i)) {
-                //count--;
+                count++;
                 System.out.println("Number " + i + " is Prime Number");
+                if(count == 3){
+                    System.out.println("Exiting  for Loop!");
+                    break;
+                }
             }
         }
     }
