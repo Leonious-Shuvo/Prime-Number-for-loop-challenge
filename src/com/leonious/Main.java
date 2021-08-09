@@ -22,9 +22,11 @@ public class Main {
             return false;
         }
         for(int i=2; i <= n/2; i++ ) {
+            System.out.println("Looping" + i);
             if(n % i == 0){
                 return false;
             }
+            break;
         }
         return true;
     }
